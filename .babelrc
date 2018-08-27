@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-runtime"
+  ],
+  "presets" : [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "dynamic-import-node",
+        "transform-class-properties",
+        "transform-es2015-modules-commonjs",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}
