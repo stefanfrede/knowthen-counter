@@ -1,24 +1,20 @@
 {
   "plugins": [
-    "syntax-dynamic-import",
-    "transform-runtime"
-  ],
-  "presets" : [
+    "@babel/plugin-syntax-dynamic-import",
     [
-      "env",
-      {
-        "modules": false
+      "@babel/plugin-transform-runtime", {
+        "corejs": 2
       }
     ]
   ],
-  "env": {
-    "test": {
-      "plugins": [
-        "dynamic-import-node",
-        "transform-class-properties",
-        "transform-es2015-modules-commonjs",
-        "transform-object-rest-spread"
-      ]
-    }
-  }
+  "presets" : [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": false
+        }
+      }
+    ]
+  ]
 }
