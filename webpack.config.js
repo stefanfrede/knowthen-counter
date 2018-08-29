@@ -21,6 +21,11 @@ const commonConfig = merge([
       new CaseSensitivePathsPlugin(),
       new FriendlyErrorsWebpackPlugin(),
       new HtmlWebpackPlugin({
+        // Required
+        inject: false,
+        template: require('html-webpack-template'),
+        // Optional
+        appMountId: 'app',
         title: 'knowthen counter application',
       }),
     ],
