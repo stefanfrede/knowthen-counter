@@ -30,6 +30,7 @@ const commonConfig = merge([
       }),
     ],
   },
+  parts.loadFonts(),
   parts.loadSVGs({
     options: {
       classPrefix: true,
@@ -66,7 +67,6 @@ const productionConfig = merge([
       discardComments: {
         removeAll: true,
       },
-      safe: true,
     },
   }),
   parts.extractCSS({

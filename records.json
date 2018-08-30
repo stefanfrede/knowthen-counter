@@ -1,0 +1,207 @@
+{
+  "html-webpack-plugin for \"index.html\"": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/html-webpack-plugin/lib/loader.js!node_modules/html-webpack-template/index.ejs": 0,
+          "node_modules/lodash/lodash.js": 1,
+          "node_modules/webpack/buildin/global.js": 2,
+          "node_modules/webpack/buildin/module.js": 3
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3
+        }
+      },
+      "chunks": {
+        "byName": {},
+        "bySource": {},
+        "usedIds": [
+          1
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??ref--6-2!src/assets/styles/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??ref--6-2!src/assets/styles/index.css": 0,
+          "node_modules/css-loader/lib/css-base.js": 1
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "node_modules/core-js/library/modules/_core.js": 0,
+      "node_modules/core-js/library/modules/_is-object.js": 1,
+      "node_modules/core-js/library/modules/_descriptors.js": 2,
+      "node_modules/core-js/library/modules/_fails.js": 3,
+      "node_modules/core-js/library/modules/_global.js": 4,
+      "node_modules/core-js/library/modules/_object-dp.js": 5,
+      "node_modules/core-js/library/modules/_has.js": 6,
+      "node_modules/lit-html/lit-html.js bc6bc48997b173bf5e98cfa1c93febda": 7,
+      "node_modules/core-js/library/modules/_export.js": 8,
+      "node_modules/core-js/library/modules/_an-object.js": 9,
+      "node_modules/core-js/library/modules/_to-iobject.js": 10,
+      "node_modules/core-js/library/modules/_to-integer.js": 11,
+      "node_modules/core-js/library/modules/_uid.js": 12,
+      "node_modules/@babel/runtime-corejs2/helpers/taggedTemplateLiteral.js": 13,
+      "node_modules/babel-loader/lib/index.js!src/index.js": 14,
+      "node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js": 15,
+      "node_modules/core-js/library/fn/object/define-properties.js": 16,
+      "node_modules/core-js/library/modules/es6.object.define-properties.js": 17,
+      "node_modules/core-js/library/modules/_ctx.js": 18,
+      "node_modules/core-js/library/modules/_a-function.js": 19,
+      "node_modules/core-js/library/modules/_hide.js": 20,
+      "node_modules/core-js/library/modules/_ie8-dom-define.js": 21,
+      "node_modules/core-js/library/modules/_dom-create.js": 22,
+      "node_modules/core-js/library/modules/_to-primitive.js": 23,
+      "node_modules/core-js/library/modules/_property-desc.js": 24,
+      "node_modules/core-js/library/modules/_object-dps.js": 25,
+      "node_modules/core-js/library/modules/_object-keys.js": 26,
+      "node_modules/core-js/library/modules/_object-keys-internal.js": 27,
+      "node_modules/core-js/library/modules/_iobject.js": 28,
+      "node_modules/core-js/library/modules/_cof.js": 29,
+      "node_modules/core-js/library/modules/_defined.js": 30,
+      "node_modules/core-js/library/modules/_array-includes.js": 31,
+      "node_modules/core-js/library/modules/_to-length.js": 32,
+      "node_modules/core-js/library/modules/_to-absolute-index.js": 33,
+      "node_modules/core-js/library/modules/_shared-key.js": 34,
+      "node_modules/core-js/library/modules/_shared.js": 35,
+      "node_modules/core-js/library/modules/_library.js": 36,
+      "node_modules/core-js/library/modules/_enum-bug-keys.js": 37,
+      "node_modules/@babel/runtime-corejs2/core-js/object/freeze.js": 38,
+      "node_modules/core-js/library/fn/object/freeze.js": 39,
+      "node_modules/core-js/library/modules/es6.object.freeze.js": 40,
+      "node_modules/core-js/library/modules/_meta.js": 41,
+      "node_modules/core-js/library/modules/_object-sap.js": 42,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??ref--6-2!src/assets/styles/index.css": 43,
+      "css node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??ref--6-2!src/assets/styles/index.css 0": 44,
+      "node_modules/mini-css-extract-plugin/dist/loader.js!node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css": 43,
+      "css node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css 0": 44,
+      "node_modules/@fortawesome/fontawesome-pro/js/all.js": 45,
+      "node_modules/@fortawesome/fontawesome-svg-core/index.es.js": 45,
+      "node_modules/@fortawesome/pro-regular-svg-icons/index.es.js": 46
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29,
+      "30": 30,
+      "31": 31,
+      "32": 32,
+      "33": 33,
+      "34": 34,
+      "35": 35,
+      "36": 36,
+      "37": 37,
+      "38": 38,
+      "39": 39,
+      "40": 40,
+      "41": 41,
+      "42": 42,
+      "43": 43,
+      "44": 44,
+      "45": 45,
+      "46": 46
+    }
+  },
+  "chunks": {
+    "byName": {
+      "main": 0,
+      "vendors~main": 1,
+      "manifest": 2
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      2
+    ]
+  },
+  "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css": [
+    {
+      "modules": {
+        "byIdentifier": {
+          "node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css": 0,
+          "node_modules/css-loader/lib/css-base.js": 1,
+          "node_modules/css-loader/lib/url/escape.js": 2,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Light.woff2": 3,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Light.woff": 4,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Light.eot": 5,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Light.ttf": 6,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.woff2": 7,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.woff": 8,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.eot": 9,
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.ttf": 10
+        },
+        "usedIds": {
+          "0": 0,
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 6,
+          "7": 7,
+          "8": 8,
+          "9": 9,
+          "10": 10
+        }
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ]
+}

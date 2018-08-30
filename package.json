@@ -74,11 +74,14 @@
     "husky": "^0.14.3",
     "jest": "^23.4.0",
     "lint-staged": "^7.2.0",
+    "lit-html": "^0.11.0",
     "mini-css-extract-plugin": "^0.4.2",
     "nodemon": "^1.18.1",
     "optimize-css-assets-webpack-plugin": "^5.0.0",
     "postcss": "^7.0.2",
-    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-normalize": "^6.0.0",
+    "postcss-preset-env": "^5.3.0",
     "prettier": "^1.13.7",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
@@ -94,6 +97,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "@babel/runtime-corejs2": "^7.0.0"
+    "@babel/runtime-corejs2": "^7.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.4",
+    "@fortawesome/pro-regular-svg-icons": "^5.3.1"
   }
 }

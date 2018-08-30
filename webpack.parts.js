@@ -3,6 +3,8 @@ const cssnano = require('cssnano');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const postcssNormalize = require('postcss-normalize');
+const postcssPresetEnv = require('postcss-preset-env');
 const PurifyCSSPlugin = require('purifycss-webpack');
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
@@ -22,7 +24,8 @@ exports.clean = path => ({
 exports.cssnext = () => ({
   loader: 'postcss-loader',
   options: {
-    plugins: () => [require('postcss-cssnext')()],
+    ident: 'postcss',
+    plugins: () => [postcssNormalize(), postcssPresetEnv()],
   },
 });
 
@@ -77,7 +80,8 @@ exports.loadCSS = ({ include, exclude } = {}) => ({
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [require('postcss-cssnext')()],
+              ident: 'postcss',
+              plugins: () => [postcssNormalize(), postcssPresetEnv()],
             },
           },
         ],
