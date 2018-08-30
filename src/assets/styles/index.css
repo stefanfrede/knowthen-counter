@@ -93,11 +93,11 @@ button {
   line-height: 2.25rem;
   outline: 0;
   padding: 0 1rem;
+  -webkit-tap-highlight-color: transparent;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 0.2s ease-out;
-  -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
@@ -124,7 +124,7 @@ button + button {
   color: var(--on-surface);
   display: inline-flex;
   flex-direction: column;
-  font-family: LatoRegular;
+  font-family: LatoRegular, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5rem;
@@ -136,7 +136,7 @@ button + button {
 }
 
 .counter__title {
-  font-family: LatoLight;
+  font-family: LatoLight, sans-serif;
   font-size: 1.5rem;
   line-height: 2.25rem;
   margin: 0 0 0.667rem;
