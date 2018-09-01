@@ -17,7 +17,7 @@ library.add(faPlus, faMinus);
 
 import './assets/styles/index.css';
 
-const initState = {
+const initModel = {
   counter: 0,
 };
 
@@ -38,7 +38,7 @@ const safeNumber = propOr('counter', isNumber, 0);
 const add = x => y => x + y;
 
 // subtract :: Number -> Number -> Number
-const subtract = x => y => x - y;
+const subtract = x => y => y - x;
 
 // increaseCounter :: Number -> State Object ()
 const increaseCounter = x => modify(mapProps({ counter: add(x) }));
@@ -54,46 +54,52 @@ const minus = icon(faMinus, {
   classes: ['fa-fw'],
 }).node;
 
-const view = state => html`
+const view = (dispatch, model) => html`
   <div class="counter">
     <div class="counter__content">
       <h3 class="counter__title">
         Counter
       </h3>
       <p class="counter__paragraph">
-        Count: ${get(safeNumber).evalWith(state)}
+        Count: ${get(safeNumber).evalWith(model)}
       </p>
     </div>
     <div class="counter__action">
       <button
-        @click=${() => console.log('+ clicked!')}>
+        @click=${() => dispatch('Plus')}>
         ${plus[0]}
       </button>
       <button
-        @click=${() => console.log('- clicked!')}>
+        @click=${() => dispatch('Minus')}>
         ${minus[0]}
       </button>
     </div>
   </div>
 `;
 
-const update = (msg, state) => {
+const update = (msg, model) => {
   switch (msg) {
     case 'Plus':
-      return increaseCounter(1).execWith(state);
+      return increaseCounter(1).execWith(model);
     case 'Minus':
-      return decreaseCounter(1).execWith(state);
+      return decreaseCounter(1).execWith(model);
     default:
-      return state;
+      return model;
   }
 };
 
 const rootNode = document.getElementById('app');
 
-const app = (initState, update, view, node) => {
-  let state = initState;
+const app = (initModel, update, view, node) => {
+  let model = initModel;
 
-  render(view(state), node);
+  render(view(dispatch, model), node);
+
+  function dispatch(msg) {
+    model = update(msg, model);
+
+    render(view(dispatch, model), node);
+  }
 };
 
-app(initState, update, view, rootNode);
+app(initModel, update, view, rootNode);
