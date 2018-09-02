@@ -19,7 +19,7 @@
         "byName": {},
         "bySource": {},
         "usedIds": [
-          0
+          1
         ]
       }
     }
@@ -142,7 +142,15 @@
       "node_modules/crocks/core/innerConcat.js": 87,
       "node_modules/crocks/core/compose.js": 88,
       "node_modules/crocks/core/predOrFunc.js": 89,
-      "node_modules/crocks/core/isPredOrFunc.js": 90
+      "node_modules/crocks/core/isPredOrFunc.js": 90,
+      "node_modules/ramda/src/internal/_isPlaceholder.js": 14,
+      "node_modules/flyd/lib/index.js": 91,
+      "node_modules/ramda/src/internal/_arity.js": 92,
+      "node_modules/ramda/src/internal/_curry1.js": 93,
+      "node_modules/ramda/src/curryN.js": 94,
+      "node_modules/ramda/src/internal/_curry2.js": 95,
+      "node_modules/ramda/src/internal/_curryN.js": 96,
+      "node_modules/babel-loader/lib/index.js!src/index.js 1957590e0a51fa6c36019ebdc16ab344": 97
     },
     "usedIds": {
       "0": 0,
@@ -235,7 +243,14 @@
       "87": 87,
       "88": 88,
       "89": 89,
-      "90": 90
+      "90": 90,
+      "91": 91,
+      "92": 92,
+      "93": 93,
+      "94": 94,
+      "95": 95,
+      "96": 96,
+      "97": 97
     }
   },
   "chunks": {
