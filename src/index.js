@@ -17,6 +17,11 @@ library.add(faPlus, faMinus);
 
 import './assets/styles/index.css';
 
+const MSGS = {
+  ADD: 'ADD',
+  SUBTRACT: 'SUBTRACT',
+};
+
 const initModel = {
   counter: 0,
 };
@@ -54,7 +59,12 @@ const minus = icon(faMinus, {
   classes: ['fa-fw'],
 }).node;
 
-const view = (dispatch, model) => html`
+const icons = {
+  plus: plus[0],
+  minus: minus[0],
+};
+
+const view = (dispatch, model, icons) => html`
   <div class="counter">
     <div class="counter__content">
       <h3 class="counter__title">
@@ -66,12 +76,12 @@ const view = (dispatch, model) => html`
     </div>
     <div class="counter__action">
       <button
-        @click=${() => dispatch('Plus')}>
-        ${plus[0]}
+        @click=${() => dispatch(MSGS.ADD)}>
+        ${icons.plus}
       </button>
       <button
-        @click=${() => dispatch('Minus')}>
-        ${minus[0]}
+        @click=${() => dispatch(MSGS.SUBTRACT)}>
+        ${icons.minus}
       </button>
     </div>
   </div>
@@ -79,9 +89,9 @@ const view = (dispatch, model) => html`
 
 const update = (msg, model) => {
   switch (msg) {
-    case 'Plus':
+    case MSGS.ADD:
       return increaseCounter(1).execWith(model);
-    case 'Minus':
+    case MSGS.SUBTRACT:
       return decreaseCounter(1).execWith(model);
     default:
       return model;
@@ -90,16 +100,16 @@ const update = (msg, model) => {
 
 const rootNode = document.getElementById('app');
 
-const app = (initModel, update, view, node) => {
+const app = (initModel, update, view, node, icons) => {
   let model = initModel;
 
-  render(view(dispatch, model), node);
+  render(view(dispatch, model, icons), node);
 
   function dispatch(msg) {
     model = update(msg, model);
 
-    render(view(dispatch, model), node);
+    render(view(dispatch, model, icons), node);
   }
 };
 
-app(initModel, update, view, rootNode);
+app(initModel, update, view, rootNode, icons);
