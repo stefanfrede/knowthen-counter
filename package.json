@@ -47,8 +47,11 @@
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "build": "webpack --env production",
     "build:stats": "webpack --env production --json > stats.json",
-    "test:jest:watch": "jest --watch",
-    "test:jest": "jest"
+    "lint": "npm run lint:javascript && npm run lint:css",
+    "lint:javascript": "npx eslint src/.",
+    "lint:css": "npx stylelint src/**/*.css",
+    "test:jest:watch": "npx jest --watch",
+    "test:jest": "npx jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
