@@ -1,7 +1,7 @@
 {
   "name": "knowthen-counter-application",
   "version": "1.0.0",
-  "description": "FP playground for the knowthen counter application.",
+  "description": "FP playground based on the knowthen counter application.",
   "engines": {
     "node": "10.x.x",
     "npm": "6.x.x"
