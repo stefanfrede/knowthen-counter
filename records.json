@@ -150,7 +150,8 @@
       "node_modules/ramda/src/curryN.js": 94,
       "node_modules/ramda/src/internal/_curry2.js": 95,
       "node_modules/ramda/src/internal/_curryN.js": 96,
-      "node_modules/babel-loader/lib/index.js!src/index.js 1957590e0a51fa6c36019ebdc16ab344": 97
+      "node_modules/babel-loader/lib/index.js!src/index.js 1957590e0a51fa6c36019ebdc16ab344": 97,
+      "node_modules/babel-loader/lib/index.js!src/icons.js 64049cf5daf227c68a8012d550d1a934": 45
     },
     "usedIds": {
       "0": 0,
@@ -259,11 +260,14 @@
       "vendors~main": 1,
       "manifest": 2
     },
-    "bySource": {},
+    "bySource": {
+      "0 node_modules/babel-loader/lib/index.js!src/view.js ./icons": 3
+    },
     "usedIds": [
       0,
       1,
-      2
+      2,
+      3
     ]
   },
   "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css": [

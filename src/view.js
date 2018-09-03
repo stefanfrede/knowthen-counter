@@ -9,11 +9,6 @@ import option from 'crocks/pointfree/option';
 import prop from 'crocks/Maybe/prop';
 import safe from 'crocks/Maybe/safe';
 
-import { icon, library } from '@fortawesome/fontawesome-svg-core';
-import { faPlus, faMinus } from '@fortawesome/pro-regular-svg-icons';
-
-library.add(faPlus, faMinus);
-
 import './assets/styles/index.css';
 
 const { get } = State;
@@ -29,18 +24,44 @@ const propOr = (key, pred, def) =>
 // safeCounterNumber :: Object -> Number
 const safeCounterNumber = propOr('counter', isNumber, 0);
 
-const plus = icon(faPlus, {
-  classes: ['fa-fw'],
-}).node;
+const run = () => {
+  const plusButton = document.querySelector('#js-plus');
+  const minusButton = document.querySelector('#js-minus');
 
-const minus = icon(faMinus, {
-  classes: ['fa-fw'],
-}).node;
+  import('./assets/icons')
+    .then(icons => {
+      const { plus, minus } = icons.default;
 
-const icons = {
-  plus: plus[0],
-  minus: minus[0],
+      while (plusButton.firstChild) {
+        plusButton.removeChild(plusButton.firstChild);
+      }
+
+      plusButton.appendChild(plus);
+
+      while (minusButton.firstChild) {
+        minusButton.removeChild(minusButton.firstChild);
+      }
+
+      minusButton.appendChild(minus);
+    })
+    .catch(error => {
+      console.error(error);
+    });
 };
+
+if (document.readyState !== 'loading') {
+  run();
+} else {
+  if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    document.attachEvent('onreadystatechange', () => {
+      if (document.readyState === 'complete') {
+        run();
+      }
+    });
+  }
+}
 
 export const createView = actions => model => html`
   <div class="counter">
@@ -53,11 +74,11 @@ export const createView = actions => model => html`
       </p>
     </div>
     <div class="counter__action">
-      <button @click=${() => actions.increase(1)}>
-        ${icons.plus}
+      <button id="js-plus" @click=${() => actions.increase(1)}>
+        <span>+</span>
       </button>
-      <button @click=${() => actions.decrease(1)}>
-        ${icons.minus}
+      <button id="js-minus" @click=${() => actions.decrease(1)}>
+        <span>-</span>
       </button>
     </div>
   </div>
