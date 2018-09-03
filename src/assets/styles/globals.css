@@ -1,0 +1,47 @@
+body {
+  background-color: var(--background);
+  margin: 1rem;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 2px;
+  box-shadow: var(--z-depth-1);
+  color: var(--on-primary);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.667rem;
+  height: 2.25rem;
+  letter-spacing: 0.5px;
+  line-height: 2.25rem;
+  outline: 0;
+  padding: 0 1rem;
+  -webkit-tap-highlight-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+  box-shadow: var(--z-depth-1-half);
+  color: var(--on-primary-light);
+}
+
+button:focus {
+  background-color: var(--primary-dark);
+  color: var(--on-primary-dark);
+  outline: 1px solid transparent;
+}
+
+button > span {
+  height: 1em;
+  text-align: center;
+  width: 1.25em;
+}
+
+button + button {
+  margin-left: 0.5rem;
+}

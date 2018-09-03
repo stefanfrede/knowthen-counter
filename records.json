@@ -19,7 +19,7 @@
         "byName": {},
         "bySource": {},
         "usedIds": [
-          0
+          1
         ]
       }
     }
@@ -151,7 +151,12 @@
       "node_modules/ramda/src/internal/_curry2.js": 95,
       "node_modules/ramda/src/internal/_curryN.js": 96,
       "node_modules/babel-loader/lib/index.js!src/index.js 1957590e0a51fa6c36019ebdc16ab344": 97,
-      "node_modules/babel-loader/lib/index.js!src/icons.js 64049cf5daf227c68a8012d550d1a934": 45
+      "node_modules/babel-loader/lib/index.js!src/icons.js 64049cf5daf227c68a8012d550d1a934": 45,
+      "css node_modules/css-loader/index.js!src/assets/styles/variables.css 0": 45,
+      "css node_modules/css-loader/index.js!src/assets/styles/globals.css 0": 46,
+      "css node_modules/css-loader/index.js!src/assets/styles/webfonts.css 0": 98,
+      "css node_modules/css-loader/index.js!src/assets/styles/counter.css 0": 99,
+      "node_modules/babel-loader/lib/index.js!src/assets/icons/index.js 1c6e262f3b551c20eac0dc2cb8a21aea": 100
     },
     "usedIds": {
       "0": 0,
@@ -251,7 +256,10 @@
       "94": 94,
       "95": 95,
       "96": 96,
-      "97": 97
+      "97": 97,
+      "98": 98,
+      "99": 99,
+      "100": 100
     }
   },
   "chunks": {
@@ -261,13 +269,14 @@
       "manifest": 2
     },
     "bySource": {
-      "0 node_modules/babel-loader/lib/index.js!src/view.js ./icons": 3
+      "0 node_modules/babel-loader/lib/index.js!src/view.js ./icons": 3,
+      "0 node_modules/babel-loader/lib/index.js!src/view.js ./assets/icons": 4
     },
     "usedIds": [
       0,
       1,
       2,
-      3
+      4
     ]
   },
   "mini-css-extract-plugin node_modules/css-loader/index.js!node_modules/postcss-loader/src/index.js??postcss!src/assets/styles/index.css": [
@@ -284,7 +293,11 @@
           "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.woff2": 7,
           "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.woff": 8,
           "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.eot": 9,
-          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.ttf": 10
+          "node_modules/file-loader/dist/cjs.js??ref--4!src/assets/fonts/LatoLatin-Regular.ttf": 10,
+          "node_modules/css-loader/index.js!src/assets/styles/variables.css": 11,
+          "node_modules/css-loader/index.js!src/assets/styles/globals.css": 12,
+          "node_modules/css-loader/index.js!src/assets/styles/webfonts.css": 13,
+          "node_modules/css-loader/index.js!src/assets/styles/counter.css": 14
         },
         "usedIds": {
           "0": 0,
@@ -297,7 +310,11 @@
           "7": 7,
           "8": 8,
           "9": 9,
-          "10": 10
+          "10": 10,
+          "11": 11,
+          "12": 12,
+          "13": 13,
+          "14": 14
         }
       },
       "chunks": {
