@@ -14,9 +14,6 @@ const PATHS = {
 
 const commonConfig = merge([
   {
-    output: {
-      publicPath: '/',
-    },
     plugins: [
       new CaseSensitivePathsPlugin(),
       new FriendlyErrorsWebpackPlugin(),
@@ -47,6 +44,9 @@ const commonConfig = merge([
 
 const productionConfig = merge([
   {
+    output: {
+      publicPath: '/knowthen-counter/',
+    },
     performance: {
       hints: 'warning',
       maxEntrypointSize: 50000,
@@ -96,6 +96,11 @@ const productionConfig = merge([
 ]);
 
 const developmentConfig = merge([
+  {
+    output: {
+      publicPath: '/',
+    },
+  },
   parts.devServer({
     host: process.env.HOST,
     port: process.env.PORT,
