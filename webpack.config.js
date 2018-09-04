@@ -23,6 +23,7 @@ const commonConfig = merge([
         template: require('html-webpack-template'),
         // Optional
         appMountId: 'app',
+        favicon: 'favicon.ico',
         title: 'knowthen counter application',
       }),
     ],
