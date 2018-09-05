@@ -75,10 +75,10 @@ export const createView = actions => model => html`
     </div>
     <div class="counter__action">
       <button id="js-plus" @click=${() => actions.increase(1)}>
-        <span>+</span>
+        +
       </button>
       <button id="js-minus" @click=${() => actions.decrease(1)}>
-        <span>-</span>
+        -
       </button>
     </div>
   </div>
