@@ -25,8 +25,8 @@ const propOr = (key, pred, def) =>
 const safeCounterNumber = propOr('counter', isNumber, 0);
 
 const run = () => {
-  const plusButton = document.querySelector('#js-plus');
-  const minusButton = document.querySelector('#js-minus');
+  const plusButton = document.getElementById('js-plus');
+  const minusButton = document.getElementById('js-minus');
 
   import('./assets/icons')
     .then(icons => {
