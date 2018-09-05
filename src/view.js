@@ -30,19 +30,19 @@ const run = () => {
 
   import('./assets/icons')
     .then(icons => {
-      const { plus, minus } = icons.default;
+      const { plus: plusIcon, minus: minusIcon } = icons.default;
 
       while (plusButton.firstChild) {
         plusButton.removeChild(plusButton.firstChild);
       }
 
-      plusButton.appendChild(plus);
+      plusButton.appendChild(plusIcon);
 
       while (minusButton.firstChild) {
         minusButton.removeChild(minusButton.firstChild);
       }
 
-      minusButton.appendChild(minus);
+      minusButton.appendChild(minusIcon);
     })
     .catch(error => {
       console.error(error);
