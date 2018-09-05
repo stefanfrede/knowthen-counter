@@ -1,4 +1,5 @@
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -16,6 +17,7 @@ const commonConfig = merge([
   {
     plugins: [
       new CaseSensitivePathsPlugin(),
+      new CopyWebpackPlugin(['./favicon.ico']),
       new FriendlyErrorsWebpackPlugin(),
       new HtmlWebpackPlugin({
         // Required
