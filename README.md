@@ -4,6 +4,8 @@ Functional Programming playground based on the
 [KnowThen](https://courses.knowthen.com) course [Functional Programming For
 Beginners with JavaScript](https://courses.knowthen.com/p/functional-programming-for-beginners-with-javascript) counter application.
 
+![Screenshot of the counter app](https://raw.githubusercontent.com/stefanfrede/knowthen-counter/master/screenshot.png)
+
 ## Install Dependencies
 
 First, make sure you have `npm` (packaged with
