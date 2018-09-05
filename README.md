@@ -27,9 +27,11 @@ $ npm run lint
 ## Run Tests
 
 ```sh
-$ npm test:jest
+$ npm test
 ```
 
+## Watch Tests
+
 ```sh
-$ npm test:jest:watch
+$ npm test:watch
 ```
