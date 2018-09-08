@@ -33,5 +33,5 @@ $ npm test
 ## Watch Tests
 
 ```sh
-$ npm test:watch
+$ npm run test:watch
 ```
