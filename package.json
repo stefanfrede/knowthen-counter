@@ -47,10 +47,10 @@
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env development\"",
     "build": "webpack --env production",
     "build:stats": "webpack --env production --json > stats.json",
-    "deploy": "npx gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "lint": "npm run lint:javascript && npm run lint:css",
-    "lint:javascript": "npx eslint src/.",
-    "lint:css": "npx stylelint src/**/*.css",
+    "lint:javascript": "eslint src/.",
+    "lint:css": "stylelint src/**/*.css",
     "test:watch": "webpack-dev-server --hot --config webpack.mocha.js",
     "test": "NODE_ENV=test mocha --require @babel/register tests/**/*.test.js"
   },
