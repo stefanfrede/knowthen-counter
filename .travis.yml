@@ -1,21 +1,22 @@
 language: node_js
 sudo: required
 dist: trusty
-node_js: lts/*
+node_js:
+  - "node"
 cache:
   directories:
   - node_modules
 git:
   depth: 1
 before_install:
-- printf "@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
-- npm i -g npm@latest
+  - printf "@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+  - npm i -g npm@latest
 install:
-- npm i
+  - npm i
 before_script:
-- npm run lint
+  - npm run lint
 script:
-- npm test
+  - npm test
 env:
   global:
     secure: C8BaFUd0nTEdCKU4CsIo/X7I5Hap8ku51jREWKTQkL8JGAavkmW4zznHOGWuNEbU7btpE0O3jigC8OQFxdR/duOO6q5JN3zj8zNRyRmyE7eCTtrUQHj1s9ODFEpmwNnvbpk1K9SMnPB0/W8w2+KG1NF/lDXNN8Bv4/+eYwg/Xd3obnzKuQCIfw4Ovj67Wr++WX8u2Y9cFJDU9+CDAACDjTJrRKMuOKKVE3b4pPR8cyRbA9EDoX6yUOv0pv4U/d3sV0ftdhy/SP/7u0aTtorpsG1L2cqMKGFOGpV16inoOR99BA1au8JZ4K7XuBI0dgt9dcculKgHNlSJgFJb/Q5yEinvu8RHCn97/olxzIkiH0iSaUYAiWCwR09E6Gy4o5g/rAf4A0j6uLPU4CivvdIx+Ii2+K3HETKEDvL540aCCyD67IDQOCgZ6C+3dU3gw2JILgRJyiVekj9Ul/4rXI3bQ+P87xYmCwwwZmFe7jyhRNKh/fuv3+nfOHR0seloXHwoKZQzdL2o9OsrKHZOLsU4MElvCwnQnv7SjWXmSuyXmwbbDGB3PQhtNdig3RVUDcxPlpcI3Eu53Hc3PAQhlGNl988ZkHzmOKsqUM0yD7MeTkBlk39LTM9pwKto9akRn5CPKh34aLoo8aEexFwQzarO2fa+V9aLwHdMyutmjoYvURU=
