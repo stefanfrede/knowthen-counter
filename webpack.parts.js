@@ -1,6 +1,7 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const cssnano = require('cssnano');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const postcssNormalize = require('postcss-normalize');
@@ -169,6 +170,24 @@ exports.minifyJavaScript = () => ({
   optimization: {
     minimizer: [new UglifyWebpackPlugin({ sourceMap: true })],
   },
+});
+
+exports.page = ({
+  path = '',
+  template = require.resolve('html-webpack-plugin/default_index.ejs'),
+  title,
+  entry,
+  chunks,
+} = {}) => ({
+  entry,
+  plugins: [
+    new HtmlWebpackPlugin({
+      chunks,
+      filename: `${path && path + '/'}index.html`,
+      template,
+      title,
+    }),
+  ],
 });
 
 exports.purifyCSS = ({ paths }) => ({
