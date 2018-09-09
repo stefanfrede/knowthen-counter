@@ -8,6 +8,7 @@ cache:
 git:
   depth: 1
 before_install:
+  - echo "@fortawesome:registry=https://npm.fontawesome.com/\n//npm.fontawesome.com/:_authToken=\${NPM_TOKEN}" > .npmrc
   - npm i -g npm@latest
 install:
   - npm i
