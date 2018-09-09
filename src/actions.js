@@ -17,12 +17,6 @@ const increaseCounter = x => modify(mapProps({ counter: add(x) }));
 const decreaseCounter = x => modify(mapProps({ counter: subtract(x) }));
 
 export const createActions = update => ({
-  increase: amount =>
-    update(model => {
-      return increaseCounter(amount).execWith(model);
-    }),
-  decrease: amount =>
-    update(model => {
-      return decreaseCounter(amount).execWith(model);
-    }),
+  increase: amount => update(model => increaseCounter(amount).execWith(model)),
+  decrease: amount => update(model => decreaseCounter(amount).execWith(model)),
 });
