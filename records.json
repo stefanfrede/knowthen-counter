@@ -19,7 +19,7 @@
         "byName": {},
         "bySource": {},
         "usedIds": [
-          0
+          1
         ]
       }
     }
@@ -156,7 +156,30 @@
       "css node_modules/css-loader/index.js!src/assets/styles/globals.css 0": 46,
       "css node_modules/css-loader/index.js!src/assets/styles/webfonts.css 0": 98,
       "css node_modules/css-loader/index.js!src/assets/styles/counter.css 0": 99,
-      "node_modules/babel-loader/lib/index.js!src/assets/icons/index.js 1c6e262f3b551c20eac0dc2cb8a21aea": 100
+      "node_modules/babel-loader/lib/index.js!src/assets/icons/index.js 1c6e262f3b551c20eac0dc2cb8a21aea": 100,
+      "node_modules/@sentry/utils/misc.js": 7,
+      "node_modules/@sentry/hub/dist/index.js": 101,
+      "node_modules/@sentry/browser/dist/index.js": 102,
+      "node_modules/lit-html/lit-html.js 0af849b87bb599d471d1111d5155203a": 103,
+      "node_modules/@sentry/core/dist/logger.js": 104,
+      "node_modules/@sentry/core/dist/dsn.js": 105,
+      "node_modules/@sentry/core/dist/error.js": 106,
+      "node_modules/webpack/buildin/global.js": 107,
+      "node_modules/@sentry/utils/is.js": 108,
+      "node_modules/@sentry/minimal/dist/index.js": 109,
+      "node_modules/@sentry/hub/dist/scope.js": 110,
+      "node_modules/@sentry/hub/dist/hub.js": 111,
+      "node_modules/@sentry/core/dist/requestbuffer.js": 112,
+      "node_modules/@sentry/core/dist/index.js": 113,
+      "node_modules/@sentry/hub/dist/global.js": 114,
+      "node_modules/@sentry/core/dist/api.js": 115,
+      "node_modules/@sentry/utils/object.js": 116,
+      "node_modules/@sentry/core/dist/baseclient.js": 117,
+      "node_modules/@sentry/types/dist/index.js": 118,
+      "node_modules/@sentry/utils/string.js": 119,
+      "node_modules/@sentry/core/dist/basebackend.js": 120,
+      "node_modules/@sentry/core/dist/interfaces.js": 121,
+      "node_modules/@sentry/core/dist/sdk.js": 122
     },
     "usedIds": {
       "0": 0,
@@ -259,7 +282,29 @@
       "97": 97,
       "98": 98,
       "99": 99,
-      "100": 100
+      "100": 100,
+      "101": 101,
+      "102": 102,
+      "103": 103,
+      "104": 104,
+      "105": 105,
+      "106": 106,
+      "107": 107,
+      "108": 108,
+      "109": 109,
+      "110": 110,
+      "111": 111,
+      "112": 112,
+      "113": 113,
+      "114": 114,
+      "115": 115,
+      "116": 116,
+      "117": 117,
+      "118": 118,
+      "119": 119,
+      "120": 120,
+      "121": 121,
+      "122": 122
     }
   },
   "chunks": {
