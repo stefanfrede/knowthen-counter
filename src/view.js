@@ -9,8 +9,6 @@ import option from 'crocks/pointfree/option';
 import prop from 'crocks/Maybe/prop';
 import safe from 'crocks/Maybe/safe';
 
-import { captureException } from '@sentry/browser';
-
 import './assets/styles/index.css';
 
 const { get } = State;
@@ -47,7 +45,8 @@ const run = () => {
       minusButton.appendChild(minusIcon);
     })
     .catch(error => {
-      captureException(new Error(error));
+      // eslint-disable-next-line no-console
+      console.error(error);
     });
 };
 
