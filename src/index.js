@@ -1,3 +1,9 @@
+import { init } from '@sentry/browser';
+
+init({
+  dsn: 'https://71a5184c8077401ca9390a122ee85966@sentry.io/1278165',
+});
+
 import flyd from 'flyd';
 import { render } from 'lit-html';
 

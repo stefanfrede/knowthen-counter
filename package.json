@@ -116,6 +116,7 @@
     "@babel/runtime-corejs2": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.4",
     "@fortawesome/pro-regular-svg-icons": "^5.3.1",
+    "@sentry/browser": "^4.0.0-rc.1",
     "crocks": "^0.10.1",
     "flyd": "^0.2.8"
   }
