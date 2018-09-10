@@ -15,8 +15,9 @@ install:
   - npm i
 before_script:
   - npm run lint
-script:
   - npm test
+script:
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true
