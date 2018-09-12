@@ -45,8 +45,7 @@ const run = () => {
       minusButton.appendChild(minusIcon);
     })
     .catch(error => {
-      // eslint-disable-next-line no-console
-      console.error(error);
+      console.error(error); // eslint-disable-line no-console
     });
 };
 
