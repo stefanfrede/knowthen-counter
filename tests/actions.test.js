@@ -7,9 +7,7 @@ use(sinonChai);
 
 import { createActions } from '../src/actions';
 
-describe('createActions tests', function() {
-  const amount = 10;
-
+describe('createActions', function() {
   afterEach(() => {
     sinon.restore();
   });
@@ -39,6 +37,8 @@ describe('createActions tests', function() {
   });
 
   it('should call increase once with 10', function() {
+    const amount = 10;
+
     const model = sinon.stub();
     model.returns({ counter: 0 });
 
@@ -123,6 +123,8 @@ describe('createActions tests', function() {
   });
 
   it('should call decrease once with 10', function() {
+    const amount = 10;
+
     const model = sinon.stub();
     model.returns({ counter: 0 });
 

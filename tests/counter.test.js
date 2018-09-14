@@ -5,7 +5,7 @@ import sinonChai from 'sinon-chai';
 
 use(sinonChai);
 
-describe('createCounter tests', function() {
+describe('createCounter', function() {
   const update = sinon.fake();
   const model = sinon.fake.returns({ counter: 0 });
 
