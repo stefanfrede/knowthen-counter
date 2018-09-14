@@ -37,3 +37,9 @@ $ npm test
 ```sh
 $ npm run test:watch
 ```
+
+## Build Tests
+
+```sh
+$ npm run build
+```
