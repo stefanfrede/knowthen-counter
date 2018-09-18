@@ -5,6 +5,16 @@ import sinonChai from 'sinon-chai';
 
 use(sinonChai);
 
+/**
+ * This import is triggering the error because counter imports view.js which
+ * imports lit-html.
+ *
+ * If you remove this line everything works fine.
+ *
+ * Other ES6 imports work fine too.
+ */
+import { createCounter } from '../src/counter';
+
 describe('createCounter', function() {
   const update = sinon.fake();
   const model = sinon.fake.returns({ counter: 0 });
