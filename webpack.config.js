@@ -37,7 +37,9 @@ const commonConfig = merge([
       idPrefix: true,
     },
   }),
-  parts.loadJavaScript({ include: PATHS.app }),
+  parts.loadJavaScript({
+    exclude: /node_modules\/(?!(lit-html)\/).*/,
+  }),
   {
     optimization: {
       noEmitOnErrors: true,
