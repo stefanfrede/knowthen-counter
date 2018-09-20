@@ -7,7 +7,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const postcssNormalize = require('postcss-normalize');
 const postcssPresetEnv = require('postcss-preset-env');
 const PurifyCSSPlugin = require('purifycss-webpack');
-const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 
 exports.attachRevision = () => ({
@@ -168,7 +168,7 @@ exports.minifyCSS = ({ options }) => ({
 
 exports.minifyJavaScript = () => ({
   optimization: {
-    minimizer: [new UglifyWebpackPlugin({ sourceMap: true })],
+    minimizer: [new TerserPlugin({ sourceMap: true })],
   },
 });
 
