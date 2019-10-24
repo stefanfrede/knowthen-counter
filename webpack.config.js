@@ -63,7 +63,7 @@ const productionConfig = merge([
       filename: '[name].[chunkhash:4].js',
     },
   },
-  parts.clean(PATHS.build),
+  parts.clean(),
   parts.minifyJavaScript(),
   parts.minifyCSS({
     options: {

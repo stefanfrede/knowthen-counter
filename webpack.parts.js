@@ -1,4 +1,4 @@
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const cssnano = require('cssnano');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -18,8 +18,8 @@ exports.attachRevision = () => ({
   ],
 });
 
-exports.clean = path => ({
-  plugins: [new CleanWebpackPlugin([path])],
+exports.clean = () => ({
+  plugins: [new CleanWebpackPlugin()],
 });
 
 exports.cssnext = () => ({
