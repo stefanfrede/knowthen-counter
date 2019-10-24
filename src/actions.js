@@ -8,7 +8,7 @@ const { modify } = State;
 const add = x => y => x + y;
 
 // subtract :: Number -> Number -> Number
-const subtract = x => y => y - x;
+const subtract = x => y => (y - x > 0 ? y - x : 0);
 
 // increaseCounter :: Number -> State Object ()
 const increaseCounter = x => modify(mapProps({ counter: add(x) }));
