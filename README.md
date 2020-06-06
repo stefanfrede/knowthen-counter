@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/stefanfrede/knowthen-counter.svg?branch=master)](https://travis-ci.org/stefanfrede/knowthen-counter)
-
 # Counter Application
 
 Functional Programming playground based on the
