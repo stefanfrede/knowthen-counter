@@ -32,20 +32,17 @@
     "maintained node versions",
     "not dead"
   ],
-  "lint-staged": {
-    "*.css": [
-      "stylelint --fix",
-      "git add"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{css,scss}": "eslint",
+    "*.js": "eslint",
+    "*.{js,json,css,scss,md}": [
+      "prettier --write"
+    ]
   },
   "scripts": {
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --host 0.0.0.0 --env development\"",
