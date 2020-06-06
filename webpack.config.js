@@ -20,13 +20,9 @@ const commonConfig = merge([
       new CopyWebpackPlugin({ patterns: ['./favicon.ico'] }),
       new FriendlyErrorsWebpackPlugin(),
       new HtmlWebpackPlugin({
-        // Required
-        inject: false,
-        template: require('html-webpack-template'),
-        // Optional
-        appMountId: 'app',
         favicon: 'favicon.ico',
-        title: 'knowthen counter application',
+        template: 'src/assets/templates/index.html',
+        title: 'knowthen calorie counter application',
       }),
     ],
   },
