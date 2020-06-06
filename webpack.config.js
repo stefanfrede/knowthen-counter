@@ -17,7 +17,7 @@ const commonConfig = merge([
   {
     plugins: [
       new CaseSensitivePathsPlugin(),
-      new CopyWebpackPlugin(['./favicon.ico']),
+      new CopyWebpackPlugin({ patterns: ['./favicon.ico'] }),
       new FriendlyErrorsWebpackPlugin(),
       new HtmlWebpackPlugin({
         // Required
@@ -112,7 +112,7 @@ const developmentConfig = merge([
   parts.loadImages(),
 ]);
 
-module.exports = mode => {
+module.exports = (mode) => {
   const config = mode === 'production' ? productionConfig : developmentConfig;
 
   return merge([commonConfig, config, { mode }]);
